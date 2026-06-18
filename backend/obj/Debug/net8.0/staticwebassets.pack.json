@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\abahr\\OneDrive\\Desktop\\secratchd\\backend\\wwwroot\\uploads\\enrollment-cvs\\14d53e2ce6be47ba804a40fd5dceee7c.pdf",
+      "PackagePath": "staticwebassets\\uploads\\enrollment-cvs\\14d53e2ce6be47ba804a40fd5dceee7c.pdf"
+    },
+    {
+      "Id": "C:\\Users\\abahr\\OneDrive\\Desktop\\secratchd\\backend\\wwwroot\\uploads\\enrollment-cvs\\622be0c21743400b8cbfa9b513780599.docx",
+      "PackagePath": "staticwebassets\\uploads\\enrollment-cvs\\622be0c21743400b8cbfa9b513780599.docx"
+    },
+    {
+      "Id": "C:\\Users\\abahr\\OneDrive\\Desktop\\secratchd\\backend\\wwwroot\\uploads\\enrollment-cvs\\7d44a3c7321b4325a64606ae4485c8e3.docx",
+      "PackagePath": "staticwebassets\\uploads\\enrollment-cvs\\7d44a3c7321b4325a64606ae4485c8e3.docx"
+    },
+    {
+      "Id": "C:\\Users\\abahr\\OneDrive\\Desktop\\secratchd\\backend\\wwwroot\\uploads\\enrollment-cvs\\8e26f60cfe124b14b2a80158f79414cc.pdf",
+      "PackagePath": "staticwebassets\\uploads\\enrollment-cvs\\8e26f60cfe124b14b2a80158f79414cc.pdf"
+    },
+    {
+      "Id": "C:\\Users\\abahr\\OneDrive\\Desktop\\secratchd\\backend\\wwwroot\\uploads\\enrollment-cvs\\a1bb5ae3d5b941df9bba633e5fc4d71e.pdf",
+      "PackagePath": "staticwebassets\\uploads\\enrollment-cvs\\a1bb5ae3d5b941df9bba633e5fc4d71e.pdf"
+    },
+    {
+      "Id": "C:\\Users\\abahr\\OneDrive\\Desktop\\secratchd\\backend\\wwwroot\\uploads\\enrollment-cvs\\df4f49464c344df88d27b0823237abda.docx",
+      "PackagePath": "staticwebassets\\uploads\\enrollment-cvs\\df4f49464c344df88d27b0823237abda.docx"
+    },
+    {
+      "Id": "C:\\Users\\abahr\\OneDrive\\Desktop\\secratchd\\backend\\wwwroot\\uploads\\enrollment-cvs\\f7789f73ff184c998dc14d9caf7e6cee.pdf",
+      "PackagePath": "staticwebassets\\uploads\\enrollment-cvs\\f7789f73ff184c998dc14d9caf7e6cee.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TrainerPortal.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TrainerPortal.Api.props",
+      "PackagePath": "build\\TrainerPortal.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TrainerPortal.Api.props",
+      "PackagePath": "buildMultiTargeting\\TrainerPortal.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TrainerPortal.Api.props",
+      "PackagePath": "buildTransitive\\TrainerPortal.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
