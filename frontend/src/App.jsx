@@ -4,6 +4,7 @@ import { AdminNavSlotProvider } from './context/AdminNavSlotContext.jsx'
 import AdminProtectedRoute from './components/AdminProtectedRoute.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
 import HomePage from './pages/HomePage.jsx'
+import AboutPage from './pages/AboutPage.jsx'
 import ServicesPage from './pages/ServicesPage.jsx'
 import ServiceTrainingDetailsPage from './pages/ServiceTrainingDetailsPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
@@ -65,6 +66,7 @@ function App() {
           <main className="min-h-screen min-w-0 pt-16 md:pl-64 md:pt-0">
             <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/services/training/:branchId/:trainingId" element={<ServiceTrainingDetailsPage />} />
             <Route path="/companies" element={<CompaniesPage />} />

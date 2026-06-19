@@ -1,5 +1,6 @@
 /** Primary marketing navigation — paths must exist in the router. */
 export const PUBLIC_NAV_LINKS = [
+  { to: '/about', label: 'About', end: false },
   { to: '/services', label: 'Services', end: false },
   { to: '/companies', label: 'Companies', end: false },
   { to: '/contact', label: 'Contact', end: false },

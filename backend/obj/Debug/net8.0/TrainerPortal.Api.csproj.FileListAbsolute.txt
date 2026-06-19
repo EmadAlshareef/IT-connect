@@ -2451,3 +2451,4 @@ C:\Users\abahr\OneDrive\Desktop\secratchd\backend\bin\Debug\net8.0\build-jwt-fix
 C:\Users\abahr\OneDrive\Desktop\secratchd\backend\bin\Debug\net8.0\build-jwt-fix\_build_check\appsettings.json
 C:\Users\abahr\OneDrive\Desktop\secratchd\backend\bin\Debug\net8.0\build-jwt-fix\_build_check\TrainerPortal.Api.deps.json
 C:\Users\abahr\OneDrive\Desktop\secratchd\backend\bin\Debug\net8.0\build-jwt-fix\_build_check\TrainerPortal.Api.runtimeconfig.json
+C:\Users\abahr\OneDrive\Desktop\secratchd\backend\obj\Debug\net8.0\TrainerPortal.Api.sourcelink.json

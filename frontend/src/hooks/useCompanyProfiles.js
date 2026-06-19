@@ -26,7 +26,7 @@ function slugifyName(name) {
 }
 
 export function useCompanyProfiles() {
-  const canSync = canSyncCompanyPortalApi()
+  const canWrite = canSyncCompanyPortalApi()
   const [companies, setCompanies] = useState(getCompanyProfilesSnapshot)
 
   const refreshFromApi = useCallback(async () => {
@@ -37,18 +37,16 @@ export function useCompanyProfiles() {
   }, [])
 
   useEffect(() => {
-    if (!canSync) {
-      setCompanies(getCompanyProfilesSnapshot())
-      return listenCompanyPortalStore(() => setCompanies(getCompanyProfilesSnapshot()))
-    }
+    // Company profiles are public read data; only create/update/delete require auth.
     void refreshFromApi().catch(() => setCompanies(getCompanyProfilesSnapshot()))
     return listenCompanyPortalStore(() => setCompanies(getCompanyProfilesSnapshot()))
-  }, [canSync, refreshFromApi])
+  }, [refreshFromApi])
 
   const addCompany = useCallback(
     async (payload) => {
       const companyName = String(payload?.companyName ?? '').trim()
       if (!companyName) return null
+      if (!canWrite) throw new Error('Sign in with an admin or company account to save companies.')
 
       const localId = `company-${Date.now()}`
       const created = await createCompany(
@@ -61,13 +59,14 @@ export function useCompanyProfiles() {
       await refreshFromApi()
       return created
     },
-    [refreshFromApi],
+    [canWrite, refreshFromApi],
   )
 
   const updateCompany = useCallback(
     async (companyId, payload) => {
       const id = String(companyId ?? '').trim()
       if (!id) return null
+      if (!canWrite) throw new Error('Sign in with an admin or company account to save companies.')
 
       const companyName = String(payload?.companyName ?? '').trim()
       if (!companyName) return null
@@ -89,13 +88,14 @@ export function useCompanyProfiles() {
       await refreshFromApi()
       return updated
     },
-    [refreshFromApi],
+    [canWrite, refreshFromApi],
   )
 
   const removeCompany = useCallback(
     async (companyId) => {
       const id = String(companyId ?? '').trim()
       if (!id) return false
+      if (!canWrite) throw new Error('Sign in with an admin or company account to delete companies.')
 
       const snap = getCompanyProfilesSnapshot()
       const row = snap.find((c) => c.id === id || c.apiId === id)
@@ -106,7 +106,7 @@ export function useCompanyProfiles() {
       await refreshFromApi()
       return true
     },
-    [refreshFromApi],
+    [canWrite, refreshFromApi],
   )
 
   return { companies, addCompany, updateCompany, removeCompany, refreshFromApi }
