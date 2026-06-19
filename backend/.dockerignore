@@ -1,0 +1,9 @@
+bin/
+obj/
+build-*/
+_build_check/
+*.user
+*.suo
+*.log
+App_Data/
+wwwroot/uploads/
